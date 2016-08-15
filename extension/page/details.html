@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>TM-DETAILS</title>
+	<meta http-equiv="keywords" content="widget,trackers,input,policy">
+	<meta http-equiv="description" content="This is my page">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+	<script src="../libs/jquery.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  
+<body>
+<div class="row" id="top-banner">
+	<div class="col-sm-2 col-sm-offset-2"><img src="../icon.png" class="img-circle" width="80" height="80"/></div>
+	<div class="col-sm-6"><h1>Threat Metrics</h1></div>
+</div>
+
+<div class="container" id="main-content">
+    <!-- Navigation -->
+    <nav>
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a data-toggle="pill" href="#score">SCORE</a></li>
+			<li><a data-toggle="pill" href="#widgets">Widgets</a></li>
+			<li><a data-toggle="pill" href="#trackers">Trackers</a></li>
+			<li><a data-toggle="pill" href="#inputs">Inputs</a></li>
+			<li><a data-toggle="pill" href="#policy">Policy</a></li>
+		</ul>
+	</nav>
+    
+    <!-- Header -->
+	<div class="tab-content">
+		<div id="score" class="tab-pane fade in active">
+			<div class="circle success"><span id="score-num">100</span></div>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Privacy Info</div>
+			  <div class="panel-body" id="score-description"></div>
+			</div>
+		</div>
+		<div id="widgets" class="tab-pane fade">
+			<h3>Menu 1</h3>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div id="trackers" class="tab-pane fade">
+			<h3>Menu 2</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+		<div id="inputs" class="tab-pane fade">
+			<h2>List of Forms</h2>
+			<div class="row">
+				<table class="table table-hover table-bordered" id="input-table">
+					<thead>
+					<tr>
+						<th>Type of forms</th>
+						<th>number of forms</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr class="hidden">
+						<td></td>
+						<td></td>
+					</tr>
+					</tbody>
+				</table>
+				<font color="red"  padding="2px"></font>
+			</div>
+		</div>
+		<div id="policy" class="tab-pane fade">
+			<h3>Menu 4</h3>
+			<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		</div>
+	</div>
+        
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+        </div>
+        <div class="footer-below">
+			<div class="row">
+				<div class="col-lg-12"> Copyright &copy; Threat Metrics</div>
+			</div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <!--<div class="scroll-top page">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-up"></i>
+        </a>
+    </div>-->
+
+</div>
+
+<script src="../js/details.js"></script>
+</body>
+
+</html>

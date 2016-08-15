@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>LOGFILE</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav id="primary_nav_wrap">
+	<ul>
+  		<li class="current-menu-item"><a href="<%=path %>/ALL_CATE">Welcome</a></li>
+  		<li><a href="<%=path %>/ALL_CONFIG">Config</a></li>
+  		<li><a href="<%=path %>/ALL_ALL">Log</a>
+    	<ul>
+      		<li><a href="<%=path %>/SH_ALL">SSH</a></li>
+      		<li><a href="<%=path %>/JM_ALL">Joomla</a></li>
+      		<li><a href="<%=path %>/WP_ALL">Wordpress</a></li>
+      		<li><a href="<%=path %>/PA_ALL">phpAdmin</a></li>
+    	</ul>
+  		</li>
+  		<li><a href="<%=path %>/ALL_BL">Blacklist</a>
+    	<ul>
+    		 <li><a href="<%=path %>/GLOBAL_BL">GLOBAL</a></li>
+     		 <li><a href="<%=path %>/SH_BL">SSH</a></li>
+     		 <li><a href="<%=path %>/JM_BL">Joomla</a></li>
+    		 <li><a href="<%=path %>/WP_BL">Wordpress</a></li>
+     		 <li><a href="<%=path %>/PA_BL">phpAdmin</a></li>
+    	</ul>
+  		</li>
+ 		<li><a href="<%=path %>/ALL_WL">Whitelist</a>
+    	<ul>
+    		<li><a href="<%=path %>/GLOBAL_WL">GLOBAL</a></li>
+      		<li><a href="<%=path %>/SH_WL">SSH</a></li>
+      		<li><a href="<%=path %>/JM_WL">Joomla</a></li>
+      		<li><a href="<%=path %>/WP_WL">Wordpress</a></li>
+      		<li><a href="<%=path %>/PA_WL">phpAdmin</a></li>
+    	</ul>
+  		</li>
+  		<li><a href="<%=path%>/Logout">Logout</a></li>
+	</ul>
+	</nav>
+    
+    <!-- Header -->
+    <section>
+        <div class="container">
+        <div class="row">
+			<table class="cse">
+			<thead>
+			<tr>
+				<th>app_id</th>
+				<th>app_name</th>
+				<th>log_id</th>
+				<th>timestamp</th>
+				<th>ip_addr</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><s:property value="app_id"/></td>
+				<td><s:property value="app_name"/></td>
+				<td><s:property value="log_id"/></td>
+				<td><s:date name="timestamp" format="yyyy-MM-dd HH:mm:ss"/></td>
+				<td><s:property value="ip_addr"/></td>
+			</tr>
+			</tbody>
+			</table>
+			<font color="red"  padding="2px"></font>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"> Copyright &copy; Threat Metrics</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top page">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-up"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>

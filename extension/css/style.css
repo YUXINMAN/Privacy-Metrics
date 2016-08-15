@@ -1,0 +1,59 @@
+body {
+font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+font-size: 100%;
+}
+
+#top-banner {
+	background-color: steelblue;
+}
+
+#main-content {
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+nav a {
+	font-size: 20px;
+}
+
+table, table>tbody>td, table>thead>th{
+	font-size: 15px;
+}
+
+.center {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 200px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.circle {
+	border-radius:50%;
+	border-style: outset;
+	border-color: steelblue;
+	color: black;
+	display:table;
+	height: 200px;
+	font-size: 200px;
+	width: auto;
+	margin:0 auto;
+}
+.circle span {
+	display:table-cell;
+	vertical-align:middle;
+	height:200px;
+	width:200px;
+	text-align:center;
+	padding: 0px 10px;
+}
+
+.success {
+	background-color: greenyellow;
+}
+
+.danger {
+	background-color: salmon;
+}
